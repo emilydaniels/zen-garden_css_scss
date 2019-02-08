@@ -1,0 +1,22 @@
+.cd-primary-nav li a {
+    color:$dark-blue;
+    font-family: $header-font;
+}
+
+.cd-primary-nav li a:hover {
+    color:$dark-pink;
+    font-family: $header-font;
+}
+
+.other-links a {
+    color: $dark-blue;
+    text-decoration: underline;
+    font-family: serif;
+}
+
+.other-links a:hover {
+    color: $dark-pink;
+    text-decoration: underline;
+    font-family: serif;
+
+}
