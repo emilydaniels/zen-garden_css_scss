@@ -117,10 +117,30 @@ h3 {
 
 }
 
+//large screen
+
+@media only screen and (min-width: 700px) {
+ 
+    .main-supporting {
+        display: grid;
+        grid-template-columns: 1fr 1fr;//add colum for river here
+        grid-template-rows: auto auto;
+        grid-gap: 2em;
+
+    }
+
+    .wrapper {
+        text-align: center;
+        font-size: 2em;
+         display: flex;
+     }
+     
+    }
+
     //footer
 .wrapper {
    text-align: center;
-   font-size: .7em;
+   font-size: .8em;
     display: flex;
 }
 
