@@ -1,0 +1,213 @@
+/* css Zen Garden default style v1.02 */
+
+
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+
+/* This file based on 'Tranquille' by Dave Shea */
+
+
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+
+
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+@import 'scss/partials/colors';
+@import 'scss/partials/fonts';
+@import 'scss/partials/nav';
+@import 'scss/partials/river';
+html {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    font-family: $body-font;
+}
+
+a:visited {
+    color: $dark-dark-blue;
+    text-decoration: underline;
+    font-family: serif;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: $dark-blue;
+    text-decoration: underline;
+    font-family: serif;
+}
+
+
+/* specific divs */
+
+//text specifications 
+h1 {
+    font-family: $header-font;
+    text-align: center;
+    font-size: 2.4em;
+}
+
+h1::after {
+    content: ":";
+}
+
+h2 {
+    font-family: $header-font;
+    text-align: center;
+    margin-top: -1.1em;
+    font-size: 1.75em;
+}
+
+body {
+    font-family: $body-font;
+    background-color: $main-light-green;
+}
+
+.summary:nth-child(2) {
+    font-size: 1.2em;
+    font-family: $header-font;
+    margin-bottom: -1em;
+}
+
+h3 {
+    margin-top: 1.5em;
+    margin-bottom: -.25em;
+}
+
+//format 
+.banner {
+    background-image: url(assets/filler.JPG);
+}
+
+//sections
+.summary {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    margin-top: -1em;
+    border-bottom: double;
+}
+
+.preamble {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: double;
+}
+
+.explanation {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: double;
+}
+
+.participation {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: double;
+}
+
+.benefits {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: double;
+}
+
+.requirements {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: double;
+}
+
+//large screen
+@media only screen and (min-width: 700px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; //add colum for river here
+        // grid-template-rows: auto auto;
+        grid-gap: 2em;
+    }
+    .explanation {
+        background-image: url(../river.svg);
+    }
+    .wrapper {
+        text-align: center;
+        font-size: 2em;
+        display: flex;
+    }
+    .intro {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+//footer
+.wrapper {
+    text-align: center;
+    font-size: .8em;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.design-selection {
+    width: 33.333%;
+    text-align: center;
+}
+
+.design-archives {
+    width: 33.333%;
+    text-align: center;
+}
+
+.zen-resources {
+    width: 33.333%;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: .75em;
+}
+
+li>a:link {
+    font-family: $body-font;
+    text-decoration: none;
+}
+
+li>a:hover,
+a:focus,
+a:active {
+    color: $dark-blue;
+    text-decoration: none;
+    font-family: $body-font;
+}
+
+footer>a:link {
+    text-decoration: none;
+    padding: .5em;
+    font-family: $header-font;
+    color: $main-light-green;
+}
+
+footer>a:hover,
+a:focus,
+a:active {
+    color: white;
+    text-decoration: none;
+    font-family: $header-font;
+}
