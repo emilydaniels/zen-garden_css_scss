@@ -128,29 +128,20 @@ h3 {
 
 //large screen
 @media only screen and (min-width: 700px) {
-    .page-wrapper {
+    .main {
         display: grid;
-        grid-template-columns: 200px 200px 200px; //add colum for river here
-        grid-template-rows: 50% 50%;
-        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 7em;
+        background: transparent url(river.svg) no-repeat center top;
+        background-size: 8em;
     }
-    .page-wrapper>div {
-        border: 2px solid black;
-        background-color: pink;
-    }
-    .wrapper {
-        background-color: white;
-        text-align: center;
-        font-size: 2em;
-        // display: flex;
-    }
-    .explanation {
-        background-color: red;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
+}
+
+.wrapper {
+    background-color: white;
+    text-align: center;
+    font-size: 2em;
+    // display: flex;
 }
 
 //footer

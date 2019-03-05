@@ -138,32 +138,20 @@ h3 {
 }
 
 @media only screen and (min-width: 700px) {
-  .page-wrapper {
+  .main {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 50% 50%;
-    grid-gap: 2em;
-  }
-
-  .page-wrapper > div {
-    border: 2px solid black;
-    background-color: pink;
-  }
-
-  .wrapper {
-    background-color: white;
-    text-align: center;
-    font-size: 2em;
-  }
-
-  .explanation {
-    background-color: red;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 7em;
+    background: transparent url(river.svg) no-repeat center top;
+    background-size: 8em;
   }
 }
+.wrapper {
+  background-color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
 .wrapper {
   text-align: center;
   font-size: 0.8em;
