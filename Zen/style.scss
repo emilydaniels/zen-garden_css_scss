@@ -21,13 +21,13 @@
 @import 'scss/partials/colors';
 @import 'scss/partials/fonts';
 @import 'scss/partials/nav';
+@import 'scss/partials/river';
 html {
     margin: 0;
     padding: 0;
 }
 
 a:link {
-    color: $dark-dark-blue;
     font-family: $body-font;
 }
 
@@ -130,22 +130,18 @@ h3 {
 @media only screen and (min-width: 700px) {
     .main {
         display: grid;
-        grid-template-columns: 1fr 1fr; //add colum for river here
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 7em;
         background: transparent url(river.svg) no-repeat center top;
-        background-size: 8em; 
+        background-size: 8em;
+    }
+}
 
-    }
-    .wrapper {
-        text-align: center;
-        font-size: 2em;
-        display: flex;
-    }
-    .intro {
-
-    }
-    
+.wrapper {
+    background-color: white;
+    text-align: center;
+    font-size: 2em;
+    // display: flex;
 }
 
 //footer
