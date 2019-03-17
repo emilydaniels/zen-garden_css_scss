@@ -48,6 +48,17 @@ a:active {
 
 /* specific divs */
 
+//images 
+
+/*header h1 {
+    background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top center;
+}*/
+
+body {
+    background: transparent url(mont.svg)no-repeat center top;
+    background-size: 100% 100%;
+}
+
 //text specifications 
 h1 {
     font-family: $header-font;
@@ -135,13 +146,11 @@ h3 {
         background: transparent url(river.svg) no-repeat center top;
         background-size: 8em;
     }
-}
-
-.wrapper {
-    background-color: white;
-    text-align: center;
-    font-size: 2em;
-    // display: flex;
+    .wrapper {
+        text-align: center;
+        font-size: 2em;
+        display: flex;
+    }
 }
 
 //footer
