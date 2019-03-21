@@ -1,0 +1,8 @@
+
+
+csslint: There is 1 problem in C:\Users\reedj\Documents\331\Flyfishing\style.css.
+
+style.css
+1: warning at line 143, col 5
+Unknown property 'grid-gap'.
+    grid-gap: 2px;

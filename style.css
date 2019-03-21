@@ -10,9 +10,9 @@
 }
 
 .bodyFont {
+  color: #171E1A;
   font-family: serif;
   font-size: 1em;
-  color: #171E1A;
 }
 
 .cd-primary-nav li a {
@@ -27,14 +27,14 @@
 
 .other-links a {
   color: #2B77DB;
-  text-decoration: underline;
   font-family: serif;
+  text-decoration: underline;
 }
 
 .other-links a:hover {
   color: #e88d8d;
-  text-decoration: underline;
   font-family: serif;
+  text-decoration: underline;
 }
 
 html {
@@ -49,23 +49,23 @@ a:link {
 
 a:visited {
   color: #192c48;
-  text-decoration: underline;
   font-family: serif;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus,
 a:active {
   color: #2B77DB;
-  text-decoration: underline;
   font-family: serif;
+  text-decoration: underline;
 }
 
 /* specific divs */
 h1 {
   font-family: "Source Sans Pro", sans-serif;
-  text-align: center;
   font-size: 2.4em;
+  text-align: center;
 }
 
 h1::after {
@@ -74,25 +74,25 @@ h1::after {
 
 h2 {
   font-family: "Source Sans Pro", sans-serif;
-  text-align: center;
-  margin-top: -1.1em;
   font-size: 1.75em;
+  margin-top: -1.1em;
+  text-align: center;
 }
 
 body {
-  font-family: serif;
   background-color: #C1D39C;
+  font-family: serif;
 }
 
 .summary:nth-child(2) {
-  font-size: 1.2em;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
   margin-bottom: -1em;
 }
 
 h3 {
-  margin-top: 1.5em;
   margin-bottom: -0.25em;
+  margin-top: 1.5em;
 }
 
 .banner {
@@ -100,61 +100,61 @@ h3 {
 }
 
 .summary {
+  border-bottom: double;
   margin-left: 1em;
   margin-right: 1em;
-  padding: 1em;
   margin-top: -1em;
-  border-bottom: double;
+  padding: 1em;
 }
 
 .preamble {
+  border-bottom: double;
   margin: 1em;
   padding: 1em;
-  border-bottom: double;
 }
 
 .explanation {
+  border-bottom: double;
   margin: 1em;
   padding: 1em;
-  border-bottom: double;
 }
 
 .participation {
+  border-bottom: double;
   margin: 1em;
   padding: 1em;
-  border-bottom: double;
 }
 
 .benefits {
+  border-bottom: double;
   margin: 1em;
   padding: 1em;
-  border-bottom: double;
 }
 
 .requirements {
+  border-bottom: double;
   margin: 1em;
   padding: 1em;
-  border-bottom: double;
 }
 
 @media only screen and (min-width: 700px) {
   .main-supporting {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-gap: 2em;
   }
 
   .wrapper {
-    text-align: center;
-    font-size: 2em;
     display: flex;
+    font-size: 2em;
+    text-align: center;
   }
 }
 .wrapper {
-  text-align: center;
-  font-size: 0.8em;
   display: flex;
+  font-size: 0.8em;
+  text-align: center;
 }
 
 ul {
@@ -162,28 +162,28 @@ ul {
 }
 
 .design-selection {
-  width: 33.333%;
   text-align: center;
+  width: 33.333%;
 }
 
 .design-archives {
-  width: 33.333%;
   text-align: center;
+  width: 33.333%;
 }
 
 .zen-resources {
-  width: 33.333%;
   text-align: center;
+  width: 33.333%;
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: black;
-  text-align: center;
+  bottom: 0;
+  left: 0;
   padding: 0.75em;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
 li > a:link {
@@ -195,23 +195,23 @@ li > a:hover,
 a:focus,
 a:active {
   color: #2B77DB;
-  text-decoration: none;
   font-family: serif;
+  text-decoration: none;
 }
 
 footer > a:link {
-  text-decoration: none;
-  padding: 0.5em;
-  font-family: "Source Sans Pro", sans-serif;
   color: #C1D39C;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0.5em;
+  text-decoration: none;
 }
 
 footer > a:hover,
 a:focus,
 a:active {
   color: white;
-  text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

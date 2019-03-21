@@ -1,0 +1,143 @@
+
+
+csslint: There are 28 problems in C:\Users\reedj\Documents\331\Flyfishing\style.css.
+
+style.css
+1: warning at line 12, col 1
+Rule doesn't have all its properties in alphabetical order.
+.bodyFont {
+
+style.css
+2: warning at line 28, col 1
+Rule doesn't have all its properties in alphabetical order.
+.other-links a {
+
+style.css
+3: warning at line 34, col 1
+Rule doesn't have all its properties in alphabetical order.
+.other-links a:hover {
+
+style.css
+4: warning at line 50, col 1
+Rule doesn't have all its properties in alphabetical order.
+a:visited {
+
+style.css
+5: warning at line 56, col 1
+Rule doesn't have all its properties in alphabetical order.
+a:hover,
+
+style.css
+6: warning at line 65, col 1
+Rule doesn't have all its properties in alphabetical order.
+h1 {
+
+style.css
+7: warning at line 75, col 1
+Rule doesn't have all its properties in alphabetical order.
+h2 {
+
+style.css
+8: warning at line 82, col 1
+Rule doesn't have all its properties in alphabetical order.
+body {
+
+style.css
+9: warning at line 87, col 1
+Rule doesn't have all its properties in alphabetical order.
+.summary:nth-child(2) {
+
+style.css
+10: warning at line 93, col 1
+Rule doesn't have all its properties in alphabetical order.
+h3 {
+
+style.css
+11: warning at line 102, col 1
+Rule doesn't have all its properties in alphabetical order.
+.summary {
+
+style.css
+12: warning at line 110, col 1
+Rule doesn't have all its properties in alphabetical order.
+.preamble {
+
+style.css
+13: warning at line 116, col 1
+Rule doesn't have all its properties in alphabetical order.
+.explanation {
+
+style.css
+14: warning at line 122, col 1
+Rule doesn't have all its properties in alphabetical order.
+.participation {
+
+style.css
+15: warning at line 128, col 1
+Rule doesn't have all its properties in alphabetical order.
+.benefits {
+
+style.css
+16: warning at line 134, col 1
+Rule doesn't have all its properties in alphabetical order.
+.requirements {
+
+style.css
+17: warning at line 141, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .main-supporting {
+
+style.css
+18: error at line 143, col 28
+Unexpected token '1fr' at line 143, col 28.
+    grid-template-columns: 1fr 1fr;
+
+style.css
+19: warning at line 145, col 5
+Unknown property 'grid-gap'.
+    grid-gap: 2em;
+
+style.css
+20: warning at line 148, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .wrapper {
+
+style.css
+21: warning at line 154, col 1
+Rule doesn't have all its properties in alphabetical order.
+.wrapper {
+
+style.css
+22: warning at line 164, col 1
+Rule doesn't have all its properties in alphabetical order.
+.design-selection {
+
+style.css
+23: warning at line 169, col 1
+Rule doesn't have all its properties in alphabetical order.
+.design-archives {
+
+style.css
+24: warning at line 174, col 1
+Rule doesn't have all its properties in alphabetical order.
+.zen-resources {
+
+style.css
+25: warning at line 179, col 1
+Rule doesn't have all its properties in alphabetical order.
+footer {
+
+style.css
+26: warning at line 194, col 1
+Rule doesn't have all its properties in alphabetical order.
+li > a:hover,
+
+style.css
+27: warning at line 202, col 1
+Rule doesn't have all its properties in alphabetical order.
+footer > a:link {
+
+style.css
+28: warning at line 209, col 1
+Rule doesn't have all its properties in alphabetical order.
+footer > a:hover,
