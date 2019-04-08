@@ -1,9 +1,21 @@
 /* css Zen Garden default style v1.02 */
+
+
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+
 /* This file based on 'Tranquille' by Dave Shea */
+
+
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+
+
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
 /* basic elements */
 
 @import 'scss/partials/colors';
@@ -40,8 +52,9 @@ a:active {
     background-repeat: no-repeat;
     background-size: 100%;
     padding-top: 19%;
-   // background-color: black;
+    // background-color: black;
 }
+
 
 /*.intro::before {
     display: inline-block;
@@ -65,7 +78,7 @@ a:active {
     position: relative;
     z-index: -10;
     content: " ";
-    width:40px; 
+    width: 40px;
     height: 40px;
     background-image: url(moon.svg);
     background-repeat: no-repeat;
@@ -77,32 +90,47 @@ a:active {
     left: 50%;
     top: -2.9em;
 }
+
 @keyframes moon {
-    0% { transform: translateY(0); }
-    50%{ transform: translateY(-55px);}
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-55px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
+
 .summary::before {
-    background-color: black;
     display: inline-block;
     position: relative;
     z-index: -10;
     content: " ";
-    width:40px;
+    width: 40px;
     height: 40px;
     background-image: url(sun3.png);
     animation-name: sun;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    left:50%;
+    left: 50%;
     top: -11.5em;
 }
+
 @keyframes sun {
-    0% { transform: translateY(-55px); }
-    50%{ transform: translateY(0);}
-    100% { transform: translateY(-55px); }
+    0% {
+        transform: translateY(-55px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-55px);
+    }
 }
+
 
 /*.page-wrapper::before {
     // position: relative;
@@ -158,10 +186,12 @@ h2 {
 body {
     background-color: white;
     font-family: $body-font;
-    animation-name:changeColor;
+    animation-name: changeColor;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
+
+
 /*@keyframes changeColor {
     to {background-color: white;}
     from {background-color: $main-light-green;}
@@ -194,7 +224,11 @@ h3 {
     padding: 1em;
 }
 
-.explanation, .participation, .benefits, .requirements, .preamble {
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.preamble {
     border-bottom: double;
     margin: 1em;
     padding: 1em;
@@ -249,9 +283,9 @@ h3 {
         100% { transform: translateY(-55px); }
     }*/
 }
+
 //large screen
 @media only screen and (min-width: 800px) {
-    
     .main {
         //color: red;
         background: transparent url(river.svg) no-repeat center top;
@@ -267,7 +301,7 @@ h3 {
         text-align: center;
     }
     //images moon svg from https://www.onlinewebfonts.com/icon/6373
-/*.page-wrapper::before {
+    /*.page-wrapper::before {
     display: inline-block;
     position: relative;
     z-index: -10;
@@ -314,7 +348,7 @@ h3 {
         100%{ transform: translateY(-80px);}
     }*/
     .page-wrapper {
-    //    background-image: url(mountians2.svg);
+        //    background-image: url(mountians2.svg);
         background-position-y: 5%;
         background-position-x: 5%;
         background-repeat: no-repeat;
@@ -322,7 +356,6 @@ h3 {
         padding-top: 19%;
     }
 }
-
 
 //footer
 .wrapper {
@@ -335,7 +368,10 @@ ul {
     list-style-type: none;
 }
 
-.design-selection, .design-archives, .zen-resources, .select {
+.design-selection,
+.design-archives,
+.zen-resources,
+.select {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -378,4 +414,3 @@ a:active {
     font-family: $header-font;
     text-decoration: none;
 }
-

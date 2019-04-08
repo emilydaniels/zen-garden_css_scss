@@ -86,20 +86,22 @@ a:active {
     left: 1%;
     top: 1%;
 }*/
-.intro::before {
+.page-wrapper::before {
   display: inline-block;
+  position: relative;
   z-index: -10;
-  width: 32px;
-  height: 32px;
+  content: " ";
+  width: 40px;
+  height: 40px;
   background-image: url(moon.svg);
   background-repeat: no-repeat;
   animation-name: moon;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: reverse;
   left: 50%;
-  top: -22px;
+  top: -2.9em;
 }
 
 @keyframes moon {
@@ -113,24 +115,33 @@ a:active {
     transform: translateY(0);
   }
 }
-.page-wrapper::before {
+.summary::before {
   display: inline-block;
   position: relative;
-  z-index: 10;
+  z-index: -10;
   content: " ";
   width: 40px;
   height: 40px;
   background-image: url(sun3.png);
-  background-repeat: no-repeat;
-  animation-name: moon;
+  animation-name: sun;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-direction: reverse;
   left: 50%;
-  top: -2.9em;
+  top: -11.5em;
 }
 
+@keyframes sun {
+  0% {
+    transform: translateY(-55px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-55px);
+  }
+}
 /*.page-wrapper::before {
     // position: relative;
      display: inline-block;
@@ -153,18 +164,10 @@ a:active {
        border-bottom: .7em  solid red;
        border-left:   1em solid transparent;
        transform: rotate(-35deg);
-       -webkit-transform: rotate(-35deg);
-       -moz-transform: rotate(-35deg);
-       -ms-transform: rotate(-35deg);
-       -o-transform: rotate(-35deg);
-}
-     &:after {
+     }
+     &:after {  
        transform: rotate(35deg);
-       -webkit-transform: rotate(35deg);
-       -moz-transform: rotate(35deg);
-       -ms-transform: rotate(35deg);
-       -o-transform: rotate(35deg);
-}
+     }
      }
      // animation-name: pulse;
      //animation-duration: 2s;
@@ -189,7 +192,7 @@ h2 {
 }
 
 body {
-  background-color: #C1D39C;
+  background-color: white;
   font-family: serif;
   animation-name: changeColor;
   animation-duration: 10s;
@@ -240,46 +243,49 @@ h3 {
     color: red;
   }
 
-  .page-wrapper::before {
-    display: inline-block;
-    position: relative;
-    z-index: -10;
-    content: " ";
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    animation-name: moon;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: reverse;
-    left: 50%;
-    top: -2.9em;
+  /*.page-wrapper::before {
+      display: inline-block;
+      position: relative;
+      z-index: -10;
+      content: " ";
+      width:40px; 
+      height: 40px;
+      background-image: url(moon.svg);
+      background-repeat: no-repeat;
+      animation-name: moon;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: reverse;
+      left: 50%;
+      top: -2.9em;
   }
-
   @keyframes moon {
-    0% {
-      transform: translateY(0);
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-55px);
-      -webkit-transform: translateY(-55px);
-      -moz-transform: translateY(-55px);
-      -ms-transform: translateY(-55px);
-      -o-transform: translateY(-55px);
-    }
-    100% {
-      transform: translateY(0);
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-    }
+      0% { transform: translateY(0); }
+      50%{ transform: translateY(-55px);}
+      100% { transform: translateY(0); }
   }
+  .summary::before {
+      //background-color: black;
+      display: inline-block;
+      position: relative;
+      z-index: -10;
+      content: " ";
+      width:40px;
+      height: 40px;
+      background-image: url(sun3.png);
+      animation-name: sun;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      left:50%;
+      top: -11.5em;
+  }
+  @keyframes sun {
+      0% { transform: translateY(-55px); }
+      50%{ transform: translateY(0);}
+      100% { transform: translateY(-55px); }
+  }*/
 }
 @media only screen and (min-width: 800px) {
   .main {
@@ -297,60 +303,50 @@ h3 {
     text-align: center;
   }
 
-  .page-wrapper::before {
-    display: inline-block;
-    position: relative;
-    z-index: -10;
-    content: " ";
-    width: 50px;
-    height: 50px;
-    background-image: url(moon.svg);
-    background-repeat: no-repeat;
-    animation-name: moon;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: reverse;
-    left: 50%;
-    top: -68px;
+  /*.page-wrapper::before {
+      display: inline-block;
+      position: relative;
+      z-index: -10;
+      content: " ";
+      width:50px; 
+      height: 50px;
+      background-image: url(moon.svg);
+      background-repeat: no-repeat;
+      animation-name: moon;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: reverse;
+      left: 50%;
+      top: -68px;
   }
-
   @keyframes moon {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-80px);
-    }
-  }
+      0% { transform: translateY(0); }
+      100%{ transform: translateY(-80px);}
+  }*/
 }
 @media only screen and (min-width: 1100px) {
-  .page-wrapper::before {
-    display: inline-block;
-    position: relative;
-    z-index: -10;
-    content: " ";
-    width: 50px;
-    height: 50px;
-    background-image: url(moon.svg);
-    background-repeat: no-repeat;
-    animation-name: moon;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: reverse;
-    left: 50%;
-    top: -70px;
+  /*.page-wrapper::before {
+      display: inline-block;
+      position: relative;
+      z-index: -10;
+      content: " ";
+      width:50px; 
+      height: 50px;
+      background-image: url(moon.svg);
+      background-repeat: no-repeat;
+      animation-name: moon;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: reverse;
+      left: 50%;
+      top: -70px;
   }
-
   @keyframes moon {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-80px);
-    }
-  }
+      0% { transform: translateY(0); }
+      100%{ transform: translateY(-80px);}
+  }*/
   .page-wrapper {
     background-position-y: 5%;
     background-position-x: 5%;
