@@ -99,6 +99,17 @@ a:active {
     transform: translateY(0);
   }
 }
+section::after {
+  background: transparent url(man.svg) no-repeat center;
+  content: "";
+  height: 50px;
+  width: 100%;
+  background-size: 8em;
+  display: inline-block;
+  position: relative;
+  background-size: contain;
+}
+
 .summary::before {
   display: inline-block;
   position: relative;
