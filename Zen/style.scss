@@ -71,29 +71,44 @@ a:active {
     animation-timing-function: ease-in-out;
     animation-direction: reverse;
     left: 50%;
-    top: -2.2em;
+    top: -1.2em;
 }
 
 @keyframes moon {
     0% {
         transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
     }
     50% {
         transform: translateY(-40px);
+        -webkit-transform: translateY(-40px);
+        -moz-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+        -o-transform: translateY(-40px);
     }
     100% {
         transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
     }
 }
 
 section::after {
     background: transparent url(man.svg) no-repeat center;
     content: "";
-    height: 50px;
+    height: 100px;
     width: 100%;
+    background-position-x: 49%;
+    background-position-y: -7px;
+    z-index: 111;
     background-size: 8em;
     display: inline-block;
-    position: relative;
+    position: absolute;
     background-size: contain;
 }
 
@@ -112,7 +127,7 @@ section::after {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     left: 50%;
-    top: -13.7em;
+    top: -10.7em;
 }
 
 @keyframes sun {
@@ -336,12 +351,47 @@ h3 {
     }
     .main {
         //color: red;
-        background: transparent url(river2.png) no-repeat center top;
-        background-size: 8em;
+        background: transparent url(river_3.png) no-repeat center top;
         display: grid;
-        grid-gap: 7em;
+        background-size: 200px 98%;
+        grid-gap: 11em;
         grid-template-columns: 1fr 1fr; //add colum for river here
         grid-template-rows: auto auto;
+    }
+    .extra2::before {
+        //color: red;
+        background: transparent url(river_rapids.png) no-repeat center top;
+        display: inline-block;
+        z-index: 100;
+        position: relative;
+        content: "";
+        height: 1100px;
+        background-size: 200px 98%;
+        width: 200px;
+        // background-color: purple;
+        top: -1331px;
+        left: 43%;
+        animation: 1s river infinite;
+        -webkit-animation: 1s river infinite;
+        background-position-x: 50%;
+        background-position-y: 0%;
+    }
+    @keyframes river {
+        0% {
+            margin-right: .10%;
+        }
+        20% {
+            margin-left: .10%;
+        }
+        50% {
+            margin-right: .10%;
+        }
+        70% {
+            margin-left: .10%;
+        }
+        100% {
+            margin-right: .10%;
+        }
     }
     .wrapper {
         display: flex;
